@@ -1,0 +1,347 @@
+:root {
+    --primary-color: #CCC8AA;
+    --secondary-color: #7D7C7C;
+    --clear-color: #F1EFEF;
+    --background-color: #191717;
+    --topic-color: #D80032;
+
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: var(--background-color);
+}
+
+/* Header */
+nav {
+    height: 5rem;
+    background-color: var(--clear-color);
+    position: fixed;
+    padding: 0 2rem;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-box {
+    max-width: 1536px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 64px;
+    margin: auto 0;
+}
+
+.nav-links-box {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nav-link {
+    font-weight: 900;
+    /* font-style: italic; */
+    color: var(--background-color);
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+
+/* Main */
+
+.about {
+    padding: 5rem 2rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(180deg, #272829, var(--background-color));
+    height: 800px;
+}
+
+.left-box {
+    width: 40%;
+    text-align: center;
+}
+
+.about-logo {
+    /* width: 500px; */
+    rotate: -15deg;
+}
+
+.logo-subtitle {
+    color: #F1EFEF;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: justify;
+}
+
+
+.right-box {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    color: #F1EFEF;
+    margin-top: 2rem;
+}
+
+.topic-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: var(--topic-color);
+    padding: 1rem 2rem;
+    box-shadow: 10px 10px 0px var(--clear-color);
+}
+
+.intro-topic {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: justify;
+    line-height: 1.2;
+    margin-top: 2rem;
+}
+
+.about-topic {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.check {
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.featured {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    height: 600px;
+}
+
+.featured-title {
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+    align-self: center;
+    color: var(--background-color);
+}
+
+.feat-text-box {
+    align-self: flex-start;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+
+.featured-topic {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.line {
+    border-top: 2px solid ;
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.tracks-list {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.track-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.track-album-cover {
+    width: 200px;
+}
+
+.track-title {
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.track-autor {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.more-btn {
+    background: none;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 5% 0;
+    cursor: pointer;
+}
+
+.arrow {
+    text-align: center;
+    margin: 0 2%;
+    font-size: 16px;
+}
+
+.play-btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .play-btn .play-arrow {
+    font-size: 40px;
+    color: black;
+  }
+  
+  /* .play-btn::after {
+    content: '';
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+  } */
+
+  .categories {
+    height: 600px;
+    padding: 5rem;
+  }
+
+  .category-list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .category-banner {
+    height: 600px;
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .category-banner::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .category-banner:hover {
+    background-size: 110% 110%;
+    background-position: center center; 
+  }
+
+  .rock {
+    background: url(../Assets/Images/phonk-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 0.8s ease-in-out;
+  }
+
+  .indie {
+    background: url(../Assets/Images/indie_image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 0.8s ease-in-out;
+  }
+
+  .hip-hop {
+    background: url(../Assets/Images/hip_hop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 0.8s ease-in-out;
+  }
+
+  .electronic {
+    background: url(../Assets/Images/electronic.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 0.8s ease-in-out;
+  }
+
+  .category-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--clear-color);
+    text-align: center;
+    margin-top: 1rem;
+    position: relative;
+  }
+
+
+.explanation {
+    height: fit-content;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+}
+
+.explanation-title {
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-shadow: 5px 5px 0px #ccc8aa52;
+}
+
+.explanation-text {
+    font-size: 20px;
+    font-size: 600;
+    width: 80%;
+    margin-bottom: 5rem;
+}
+
+footer {
+    padding: 5rem;
+}
+
+footer h1 {
+    text-align: center;
+    font-weight: 900;
+    color: var(--clear-color);
+    font-style: italic;
+}

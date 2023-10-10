@@ -1,0 +1,216 @@
+:root {
+    --primary-color: #CCC8AA;
+    --secondary-color: #7D7C7C;
+    --clear-color: #F1EFEF;
+    --background-color: #191717;
+    --topic-color: #D80032;
+
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: var(--background-color);
+}
+
+/* Header */
+nav {
+    height: 5rem;
+    background-color: var(--clear-color);
+    position: fixed;
+    padding: 0 2rem;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-box {
+    max-width: 1536px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 64px;
+    margin: auto 0;
+}
+
+.nav-links-box {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nav-link {
+    font-weight: 900;
+    /* font-style: italic; */
+    color: var(--background-color);
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+
+/* Main */
+
+.featured {
+    padding: 2rem;
+    padding-top: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    height: fit-content;
+}
+
+.music:last-child {
+    margin-bottom: 5rem;
+}
+
+.featured-title {
+    margin-top: 5rem;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+    align-self: center;
+    color: var(--background-color);
+}
+
+.feat-text-box {
+    align-self: flex-start;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+
+.featured-topic {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.line {
+    border-top: 2px solid ;
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.tracks-list {
+    width: 100%;
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.track-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.track-album-cover {
+    width: 100px;
+    height: 100px;
+    align-self: flex-end;
+}
+
+.track-title {
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 1rem;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.track-autor {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.play-btn {
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: fit-content;
+    display: flex;
+    cursor: pointer;
+    align-self: flex-end;
+    justify-content: center;
+  }
+  
+.play-btn .play-arrow .stop {
+    font-size: 32px;
+    color: black;
+}
+
+.stop-btn {
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: fit-content;
+    display: flex;
+    cursor: pointer;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+.music-box {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.waveform {
+    width: 40%;
+    height: 75px;
+    align-self: center;
+}
+
+.plus-link {
+    align-self: center;
+    cursor: pointer;
+    color: #191717;
+}
+
+.plus-link:visited {
+    color: #191717;
+}
+
+.plus-btns {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+
+.behav-box {
+    display: flex;
+}
+
+footer {
+    padding: 5rem;
+}
+
+footer h1 {
+    text-align: center;
+    font-weight: 900;
+    color: var(--clear-color);
+    font-style: italic;
+}
